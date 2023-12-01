@@ -1,0 +1,108 @@
+body {
+    background-color: #eaffc2;
+}
+
+header {
+    background-image: url(mulhercommala.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 180px;
+    border-radius: 10px;
+
+}
+
+h1{ /* Titulo*/
+    font-family:'Script MT'; font-size:70px; /* Fonte*/
+    text-align: center; /* Alinhamento no centro*/
+    color: white; /* Cor*/
+    z-index: 1;
+}
+
+
+nav { /*Este elemento agrupa recursos de navegação do site*/
+    background-color: #032703fa; /* Cor*/
+    padding: 2px 0; /* Preenchimento */
+}
+
+/*Imagem logo*/
+#Logo {
+    position: relative; /* Posição está relativa com isso posso colocar imagem onde quiser*/
+    border-radius: 20px; /*Borda*/
+    right: 185px; /*Move da direita para a esquerda*/
+    height: 55px;
+}
+
+nav a {
+    position: relative; /*Posso colocar a posição como eu quiser*/
+    left: 160px; /*Da esquerda para a direita*/
+    text-decoration: none; /*Sem decoração no texto*/
+    margin: 10px; /*Margem*/
+    color: white; /* Cor*/
+    font-weight: bold;
+    transition: color 0.3s; /* Adiciona uma transição suave de cor ao passar o mouse */
+
+    
+}
+
+nav a:hover {
+    color: #eaffc2; /* Vai alterar cor quando passar o mouse */
+}
+
+/**/
+.menu {
+    display: flex; /*Torna um elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    justify-content:space-around;  /*Coloca espaço não somente entre os elementos mas também por fora deles*/
+    align-items: center; /*Faz o alinhamento entre os itens nesse caso no centro*/
+    border-radius: 10px; /*Borda*/
+}
+
+#subtitulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30; /*Fonte*/
+    color: White;
+    background-color:#032703fa ;
+    padding: 6px;
+    position: relative;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+#sub {
+    position: relative; /* Esse valor permite posicionar um elemento em relação à sua posição estática padrão na página da web.*/
+    left: 60px; /*Move da esquerda para direita*/
+}
+
+#Mapalocal {
+    display: flex;
+    justify-content: center;
+    background-image: url(florestaoutono.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+    
+}
+
+#Mapinha {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    
+}
+
+footer {
+    background-color:#032703fa ;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 700px;
+}
+
+#myname {
+    position: relative;
+    font-family:'Script MT'; font-size:20px; /* Fonte*/
+    color: White;
+    text-align: right;
+    right: 30px;
+}

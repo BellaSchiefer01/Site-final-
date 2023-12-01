@@ -1,0 +1,365 @@
+/*Corpo do site*/
+body {
+    
+    background-color: #eaffc2; /* Cor da página inteira*/
+}
+
+/*Cabeçalho*/
+header {
+    background-image: url(casteloJamie.jpg); /* Capa do Site*/
+    border-radius: 10px; /*Borda arredondada*/
+    position: relative; /* Posição está relativa com isso posso colocar imagem onde quiser*/
+    background-size: cover; /* Deixa a capa do tamanho certo do site*/
+    background-position: center; /*  Posição no centro */
+    background-repeat: no-repeat; /* Deixar somente uma foto*/
+    padding: 150px; /* Preenchimento da capa*/
+
+}
+
+h1{ /* Titulo*/
+    font-family:'Script MT'; font-size:70px; /* Fonte*/
+    text-align: center; /* Alinhamento no centro*/
+    color: white; /* Cor*/
+    z-index: 1px;
+}
+
+
+nav { /*Este elemento agrupa recursos de navegação do site*/
+    background-color: #032703fa; /* Cor*/
+    padding: 2px 0; /* Preenchimento */
+}
+
+/*Imagem logo*/
+#Logo {
+    position: relative; /* Posição está relativa com isso posso colocar imagem onde quiser*/
+    border-radius: 20px; /*Borda*/
+    right: 185px; /*Move da direita para a esquerda*/
+    height: 55px;
+}
+
+
+nav a {
+    position: relative; /*Posso colocar a posição como eu quiser*/
+    left: 160px; /*Da esquerda para a direita*/
+    text-decoration: none; /*Sem decoração no texto*/
+    margin: 10px; /*Margem*/
+    color: white; /* Cor*/
+    font-weight: bold;
+    transition: color 0.3s; /* Adiciona uma transição suave de cor ao passar o mouse */
+
+    
+}
+
+nav a:hover {
+    color: #eaffc2; /* Vai alterar cor quando passar o mouse */
+}
+
+/**/
+.menu {
+    display: flex; /*Torna um elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    justify-content:space-around;  /*Coloca espaço não somente entre os elementos mas também por fora deles*/
+    align-items: center; /*Faz o alinhamento entre os itens nesse caso no centro*/
+    border-radius: 10px; /*Borda*/
+}
+
+
+#subtitulo {
+    text-decoration: none; /*Sem decoração no texto*/
+    padding: 6px; /*Preenchimento*/
+    background-color: #032703fa; /*Color*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30; /*Fonte*/
+    color:#eaffc2; /*Cor*/
+    margin-top: 20px; /*Margem o espaço entre a capa e o sustitulo*/
+    border-radius: 10px; /*Borda arredondada*/
+    
+}
+
+/*Para mexer no subtitulo*/
+#sub {
+    position: relative; /* Esse valor permite posicionar um elemento em relação à sua posição estática padrão na página da web.*/
+    left: 60px;
+    text-align: justify; /*Move da esquerda para direita*/
+}
+
+/*Para mexer no texto*/
+pre {
+    font-family:Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif; font-size: 15; /*Fonte*/
+    color: white; /*Color*/
+    text-align: justify;
+   
+}
+
+
+
+/*Borda no vídeo*/
+#videomusic {
+    border: 1px groove white; /*Borda*/
+    border-radius: 5px; /*Arredondando borda*/
+}
+
+/*Espaço do texto1 e vídeo*/
+.container {
+    background-color: #032703fa; /*Color fundo*/
+    padding: 15px; /*Preenchimento*/
+    display: flex; /*Torna um elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    align-items: center; /*Faz o alinhamento entre os itens nesse caso no centro*/
+    justify-content: space-around;  /*Coloca espaço não somente entre os elementos mas também por fora deles*/
+    margin-top: 60px; /*Margem de cima*/
+    border-radius: 10px; /*Borda*/
+}
+
+
+
+ /* pre, iframe{
+    display: inline-block;
+
+  } */ /* Poderia ter usado este também além do fisplay flex*/
+
+
+/*Para mexer nas imagems das cidades*/
+.city {
+    margin-top: 100px; /*Margem de cima*/
+    margin-bottom: 100PX; /*Margem de baixo*/
+    height: 300px; /* Altura*/
+    width: 300px; /* Largura*/
+    border: 1px solid white; /*Borda*/
+    padding: 15px 15px 15px 15px; /*Preenchimento*/
+}
+/*margin: 50px 20px 20px 90px; valor da margem das imagens*/
+
+/*Usando container para colocar a descrição em baixo das imagens*/
+.textcity {
+    display: flex; /*Torna um elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    justify-content:space-around; /*Coloca espaço não somente entre os elementos mas também por fora deles*/
+    position: relative; /* Esse valor permite posicionar um elemento em relação à sua posição estática padrão na página da web.*/
+    bottom: 110px; /*Posiciona elemento da página na área inferior da tela*/
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy; /*Fonte*/
+    font-size: 110%; /*Tamanho texto*/
+    color: white; /*Cor*/
+}
+
+/*Aqui estou editando a descrição das imagem*/
+#Edimburgo {
+    position: relative; /* Esse valor permite posicionar um elemento em relação à sua posição estática padrão na página da web.*/
+    right: 35px; /*Direciona da esquerda para direita*/
+    border: 1px solid white; /*Borda*/
+    padding: 15px 15px 15px 15px; /*Preenchimento*/
+ 
+}
+/*para mudar quando passa o mouse*/
+#Edimburgo:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+
+#Glasgow {
+    position: relative;  /* Esse valor permite posicionar um elemento em relação à sua posição estática padrão na página da web.*/
+    right: 65px; /*Direciona da esquerda para direita*/
+    border: 1px solid white; /*Borda*/
+    padding: 15px 15px 15px 15px; /*Preenchimento*/
+}
+/*para mudar quando passa o mouse*/
+#Glasgow:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+#Ilhadeskye {
+    position: relative; /* Esse valor permite posicionar um elemento em relação à sua posição estática padrão na página da web.*/
+    right: 35px; /*Direciona da esquerda para direita*/
+    border: 1px solid white; /*Borda*/
+    padding: 15px 15px 15px 15px; /*Preenchimento*/
+}
+/*para mudar quando passa o mouse*/
+#Ilhadeskye:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+/*Texto 2 com imagem*/
+.Texto2 {
+    display: flex;  /*Torna um elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    justify-content: space-around; /*Coloca espaço não somente entre os elementos mas também por fora deles*/
+    align-items: center; /*Alinhamento itens no centro*/
+    background-color:#032703fa; /*Cor*/
+    padding: 40px; /*Preenchimento*/
+    border-radius: 10px; /*Borda*/
+    font-family:Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif; font-size: 15; /*Fonte*/
+
+}
+
+
+
+.photo {
+    position: relative;  /* Esse valor permite posicionar um elemento em relação à sua posição estática padrão na página da web.*/
+    height: 250px; /*Altura*/
+    width: 400px; /*Largura*/
+    border: 1px groove white; /*Borda na imagem*/
+    border-radius: 10px; /*Borda*/
+    
+
+}
+
+
+/*Imagem da rota*/
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    background-color:#032703fa ;
+    padding: 40px;
+    margin-top: 90px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+/*Mapa rota*/
+#mapa {
+    height: 400px;
+    width: 700px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid White;
+    padding: 12px 12px 12px 12px;
+}
+
+/*Texto rota*/
+#textrota {
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 12px 12px 12px;
+}
+
+/*para mudar quando passa o mouse*/
+#textrota:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+
+
+/*Parte inteira do formulário*/
+#titulo {
+    font-family: 'Script MT'; font-size: 35px; /* Fonte*/
+    color: white;
+    text-align: center; /* Alinhamento do texto no centro*/
+    background-image: url(Folhas-Secas.png);
+    border-radius: 10px;
+    margin-top: 90px;
+}
+
+/*Corpo do formulário*/
+fieldset {
+    background-image: url(Folhas-Secas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px; /*Borda arredondada*/
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    border: 5px #6B8E23 double;
+
+    
+}
+
+/*Trabalhando a margem onde fica as caixas e os nomes delas*/
+.campo {
+    margin-bottom:30px ;
+        
+}
+ /*Nome das caixas*/
+label {
+    position: relative;
+    bottom:50px;
+    color: white;
+}
+
+/*Caixa do nome completo*/
+#caixa1 {
+    position: relative;
+    bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0.1em black;
+    
+}
+/*Caixa do telefone de contato*/
+#caixa2 {
+    position: relative;
+    bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0.1em black;
+    
+}
+/*Caixa de email*/
+#caixa3 {
+    position: relative;
+    bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0.1em black;
+    
+}
+/*Caixa para escrever uma mensagem*/
+#caixa4 {
+    position: relative;
+    border-radius: 5px;
+    bottom: 30px;
+    box-shadow: 2px 2px 2px 0.1em black;
+    resize: none;
+    
+}
+
+/*Mudando altura e largura das caixas de texto*/
+input {
+    position: relative;
+    height: 20px;
+    width: 300px;
+}
+
+/*Area para mandar escrever uma mensagem */
+textarea {
+    position: relative;
+    height: 150px;
+    width: 300px;
+}
+
+/*Botão de enivar*/
+#botao {
+    position: relative;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 0.1em black;
+    color: black;
+    height: 40px;
+    width: 110px;
+}
+
+form {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fonte*/
+    font-size: 1em; /*Tamanho da fonte*/
+    margin-left: 31%; /*Margem da esquerda*/
+    margin-top: 1%; /*Margem de cima*/
+    margin-right: 37%; /*Margem da direita*/
+    
+    justify-content: center; /* Usada para alinhar os elementos ao longo do eixo principal, cuja direção (row ou columm) é definida a partir da propriedade flex-direction*/
+}
+
+/*Rodapé*/
+footer {
+    background-color:#032703fa ;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 700px;
+}
+
+/*Meu nome no Rodapé*/
+#myname {
+    position: relative;
+    font-family:'Script MT'; font-size:20px; /* Fonte*/
+    color: White;
+    text-align: right;
+    right: 30px;
+}
+
